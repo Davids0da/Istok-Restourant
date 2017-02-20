@@ -1,29 +1,34 @@
 @font-face {
-    font-family: 'MangaB'; /*a name to be used later*/
-    src: url('../fonts/banga.ttf'); /*URL to font*/
+    font-family: 'MangaB';
+    src:url('../fonts/../fonts/BanglaMN.eot') format('embedded-opentype'), 
+        url('../fonts/../fonts/BanglaMN.woff') format('woff'), 
+        url('../fonts/../fonts/BanglaMN.ttf')  format('truetype'),
+        url('../fonts/../fonts/BanglaMN.svg') format('svg');
 }
 
 #body {
-    background-color: #272727;
     font-family: 'MangaB';
+    background: #272727;
 }
 
 #logo { 
     height: 305px;
     width: 350px;
     margin-top: 100px;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+
+#logo:hover {
+     -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 #div1 {
-    height: 800px;
+height: 800px;
 background-image:url('../images/background1.jpg');
-background-repeat:no-repeat;
--webkit-background-size:cover;
--moz-background-size:cover;
--o-background-size:cover;
-background-size:cover;
-background-position:center;
-background-attachment: fixed;
+background-size: cover;
+
 }
 
 #h3,#h2,#h1 {
@@ -68,30 +73,21 @@ background-attachment: fixed;
 .navbar1 {
     margin-top: 150px;
 }
-.background3 {
-    height: 800px;
-background-image:url('../images/background2.jpg');
+#background3 {
+height: 800px;
+background:url('../images/background2.jpg');
 background-repeat:no-repeat;
--webkit-background-size:cover;
--moz-background-size:cover;
--o-background-size:cover;
-background-size:cover;
-background-position:center;
+background-size: cover;
 }
 
 .background4 {
 height: 800px;
 background-image:url('../images/background3.jpg');
-background-repeat:no-repeat;
--webkit-background-size:cover;
--moz-background-size:cover;
--o-background-size:cover;
-background-size:cover;
-background-position:center;
-background-attachment: fixed;
+background-size: cover;
 }
 
 #h7 {
+    margin-top: 160px;
     color: white;
     font-family: 'MangaB';
 }   
@@ -105,13 +101,97 @@ background-attachment: fixed;
     margin-top: 100px;
     height: 80px;
     width: 200px;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
 }
 
+#spoonvertical {
+    margin-top: 110px;
+    height: 200px;
+    width: 40px;
+    margin-left: 20px;
+      -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+#spoonvertical:hover, #spoon:hover {
+      -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+
+}
 .menu a {
     color: #ffffff;
+   -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+-ms-transition: all 0.3s ease;
 }
 
-.menu a:hover, a:focus {
-    color: #A4A4A4;
+.menu a:hover {
+    color:white;
     text-decoration: none;
+    font-size: 50px;
+  
+}
+.menu a:active {
+    color: white;
+    text-decoration: none;
+}
+.menu a:focus {
+    color: white;
+    text-decoration: none;
+}
+#map {
+    height: 400px;
+}
+
+#div2 {
+height: 400px;
+background-image:url('../images/background4.jpg');
+background-size: cover;
+}
+
+.linebreak {
+    width: 1px;
+    background-color: white;
+    height: 350px;
+}
+
+#logo1 { 
+    height: 260px;
+    width: 300px;
+    margin-top: 80px;
+    margin-left: 150px;
+}
+
+#footertext {
+    color: white;
+    font-size: 25px;
+    margin-top: 150px;
+    margin-right: 150px;
+}
+
+#instagram, #facebook {
+    width: 40px;
+    height: 40px;
+    margin-top: 30px;
+    margin-right: 20px;
+       -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+-ms-transition: all 0.3s ease;
+}
+
+#instagram {
+    margin-right: 170px;
+}
+
+#instagram:hover {
+    width: 60px;
+    height: 60px;
+}
+
+
+#facebook:hover {
+    width: 60px;
+    height: 60px;
 }
