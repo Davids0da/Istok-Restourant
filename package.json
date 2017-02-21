@@ -1,0 +1,24 @@
+{
+  "name": "istok",
+  "version": "1.0.0",
+  "description": "Istok | Restoran vijetnamske hrane",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RigaNik/Istok-Restourant.git"
+  },
+  "author": "David Milosavljevic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RigaNik/Istok-Restourant/issues"
+  },
+  "homepage": "https://github.com/RigaNik/Istok-Restourant#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1",
+    "scrollmagic": "^2.0.5"
+  }
+}
