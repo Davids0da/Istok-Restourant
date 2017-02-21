@@ -203,3 +203,9 @@ $(document).ready(function () {
     $(this).blur();
   });
 });
+
+$('#logo1').click(function(){
+  $('html, body').animate({
+    scroll: $("#div1").offset().top
+  }, 2000);
+});
