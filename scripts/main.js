@@ -182,33 +182,13 @@ function initMap() {
   });
 }
 
-// $('#h4').click(function(){
-//   $('html, body').animate({
-//     scrollTop: $("#about").offset().top
-//   }, 2000);
-// });
-// $('#h5').click(function(){
-//   $('html, body').animate({
-//     scrollTop: $("#carousel").offset().top
-//   }, 2000);
-// });
-// $('#h6').click(function(){
-//   $('html, body').animate({
-//     scrollTop: $("#div2").offset().top
-//   }, 2000);
-// });
-
 $(document).ready(function () {
   menu.navLinks();
-  // $(".nofocus").click(function(event) {
-  //   $(this).blur();
-  // });
 });
 
 var menu = {
   navLinks: function(){
     $('.navbar a').click(function(e){
-      e.preventDefault();
       let to = $(this).attr('href');
       console.log(to);
       $('html, body').animate({
@@ -217,10 +197,3 @@ var menu = {
     })
   }
 }
-
-
-// $('#logo1').click(function(){
-//   $('html, body').animate({
-//     scroll: $("#div1").offset().top
-//   }, 2000);
-// });
