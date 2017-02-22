@@ -25,7 +25,9 @@
     animation: swinging 3.5s ease-in-out forwards infinite;
 
 }
-
+#footer-logo{
+    margin: 150px auto 0;
+}
 @-webkit-keyframes swinging{
     0%{-webkit-transform: rotate(10deg);}
     50%{-webkit-transform: rotate(-10deg)}
@@ -48,7 +50,9 @@ h1, h2, h3, h4, h5, h6, p ,a{
     text-decoration: none;
     color: #fff;
 }
-
+.mtheader{
+    margin-top: 200px;
+}
 .navbar {
 	margin-top: 40px;
 	color: #ffffff;
@@ -71,6 +75,9 @@ h1, h2, h3, h4, h5, h6, p ,a{
     background:url('../images/background3.jpg') no-repeat center center;
     background-size: cover;
 }
+#about .text-center{
+    margin-top: 15%;
+}
 #spoon {
     margin-top: 100px;
     height: 80px;
@@ -80,10 +87,9 @@ h1, h2, h3, h4, h5, h6, p ,a{
 }
 
 #spoonvertical {
-    margin-top: 110px;
+    margin: 200px auto 0;
     height: 200px;
     width: 40px;
-    margin-left: 20px;
     -webkit-transition: -webkit-transform .8s ease-in-out;
     transition:         transform .8s ease-in-out;
 }
@@ -92,7 +98,7 @@ h1, h2, h3, h4, h5, h6, p ,a{
   transform: rotate(360deg);
 
 }
-.menu a {
+.navbar a {
     color: #ffffff;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -100,12 +106,12 @@ h1, h2, h3, h4, h5, h6, p ,a{
     -ms-transition: all 0.3s ease;
 }
 
-.menu a:hover {
+.navbar a:hover {
     font-size: 50px;
     text-decoration: none;
 
 }
-.menu a:active, .menu a:focus, .menu a:hover {
+.navbar a:active, .menu a:focus, .menu a:hover {
     color: white;
     text-decoration: none;
 }
@@ -124,8 +130,6 @@ h1, h2, h3, h4, h5, h6, p ,a{
 #footertext {
     color: white;
     font-size: 25px;
-    margin-top: 150px;
-    margin-right: 150px;
 }
 
 .social-icons img {
@@ -143,4 +147,11 @@ h1, h2, h3, h4, h5, h6, p ,a{
 .img-icons img:hover {
     width: 60px;
     height: 60px;
+}
+
+@media screen and (max-width: 768px){
+    .mtheader, #logo, #spoonvertical, #footer-logo{
+        margin-top: 20px;
+    }
+
 }
