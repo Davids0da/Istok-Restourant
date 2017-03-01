@@ -7,9 +7,8 @@
 
     <title>Istok | Restoran vijetnamske hrane</title>
 
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="css/main.css"/>
-
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
@@ -17,8 +16,8 @@
         <div class="container-fluid">
             <div class="row full-height" id="div1">
                 <div class="text-center col-sm-4 col-xs-12">
-                    <div class="mtheader">
-                        <h3>
+                    <div class="mtheader headertext2">
+                        <h3 id="istoktextsize">
                             Istok
                         </h3>
                         <h3>
@@ -27,31 +26,31 @@
                     </div>
                 </div>
                 <div class="text-center col-sm-4 col-xs-12">
-                 <img id="logo" src="images/logo1.png" alt="logoistok" class="img-responsive">
-             </div>
-             <div class="text-center col-sm-4 col-xs-12">
-                 <div class="mtheader">
-                    <h3>
-                        Gospodar Jevremova 50, <br id="br"> Dorćol, Beograd <br> Utorak - Nedelja: 12h-24h <br> Ponedeljak: Ne
-                        radi
-                    </h3>
+                    <img id="logo" src="images/logo1.png" alt="logoistok" class="img-responsive">
+                </div>
+                <div class="text-center col-sm-4 col-xs-12">
+                    <div class="mtheader headertext">
+                        <h3>
+                            Gospodar Jevremova 50, <br id="br"> Dorćol, Beograd <br> Utorak - Nedelja: 12h-24h <br> Ponedeljak:
+                            Ne radi
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="col-md-12 navbar ">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="#about">O nama</a>
+                        </li>
+                        <li>
+                            <a href="#gallery">Galerija</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Kontakt</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-
-            <div class="col-md-offset-4 col-md-4 col-xs-12 navbar">
-                <ul class="list-inline text-center">
-                    <li>
-                        <a class="nofocus" href="#about">O nama</a>
-                    </li>
-                    <li>
-                        <a class="nofocus" href="#gallery">Galerija</a>
-                    </li>
-                    <li>
-                        <a class="nofocus" href="#contact">Kontakt</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
     </header>
     <section class="full-height" id="background3">
     </section>
@@ -64,7 +63,7 @@
                             “Neka vaša hrana bude lek, a vaš lek vaša hrana.” <br> Hipokrat
                         </h1>
                         <img id="spoon" src="images/spoon.png" alt="spoon">
-                        <h1>
+                        <h1 id="textbelowspoon">
                             Vijetnamski restoran. Prvi u Beogradu. <br> Duh i svežina orijenta u našoj interpretaciji. Inovativan,
                             egzotičan i zavodljiv.
                         </h1>
@@ -127,27 +126,27 @@
             </div>
         </div>
     </section>
-    <section class="full-height">
+    <section class="half-height">
         <div class="container-fluid">
             <div class="row">
                 <div id="map"></div>
             </div>
         </div>
     </section>
-    <section id="contact" class="full-height">
+    <section id="contact" class="half-height">
         <div class="container-fluid">
             <div class="row">
                 <div class="text-center col-sm-5">
-                    <a href="index.html"><img id="footer-logo" src="images/logo1.png" alt="logoistok" class="img-responsive"></a>
+                    <img id="footer-logo" src="images/logo1.png" alt="logoistok" class="img-responsive">
                 </div>
                 <div class="text-center col-sm-2" id="linebreak">
                     <img src="images/spoonvertical.png" alt="spoon" class="img-responsive" id="spoonvertical">
                 </div>
                 <div class="text-center col-sm-5">
-                    <div class="mtheader">
+                    <div class="mtheader footertext">
                         <h5 id="footertext">
                             Kontakt i Rezervacije: </br>
-                            011 3281360
+                            011 3281360 <br> restoranistok@gmail.com
                         </h5>
                         <div class="text-center">
                             <a class="nofocus social-icons" href="https://www.facebook.com/istokrestoran/?fref=ts" target="_blank"> <img src="images/facebook.png" alt="facebook" onclick="facebook"> </a>
@@ -159,14 +158,14 @@
         </div>
     </section>
 </body>
-<script src="node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js"></script>
-<script src="node_modules/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
-<script src="node_modules/jquery/dist/jquery.min.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="scripts/parallax.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCc9Eq2y9mdshCVin__2xKkKcYfj7xp_Fc&callback=initMap" async
-defer></script>
-<script src="scripts/main.js"></script>
 
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCc9Eq2y9mdshCVin__2xKkKcYfj7xp_Fc&callback=initMap" async
+    defer></script>
+    <script src="scripts/main.js"></script>
 
 </html>

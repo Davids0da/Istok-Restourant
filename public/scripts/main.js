@@ -182,18 +182,11 @@ function initMap() {
   });
 }
 
-$(document).ready(function () {
-  menu.navLinks();
-});
-
-var menu = {
-  navLinks: function(){
-    $('.navbar a').click(function(e){
+$(document).ready(() => {
+  $('.navbar a').click(function(e){
       let to = $(this).attr('href');
-      console.log(to);
       $('html, body').animate({
         scrollTop: $(to).offset().top
       })
-    })
-  }
-}
+    });
+});
