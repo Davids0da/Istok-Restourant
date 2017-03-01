@@ -19,6 +19,8 @@ body {
 
 #logo { 
     margin: 100px auto 0;
+    width: 500px;
+    height: 440px;
     -webkit-transform-origin: 50% 0;
     transform-origin: 50% 0;
     -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
@@ -173,3 +175,21 @@ h1, h2, h3, h4, h5, h6, p ,a{
     }
 }
 
+ @media only screen and (max-device-width:480px){
+    .full-height {
+        height: 50vh;
+    }
+    #about .text-center{
+    margin-top: 20%;
+    }
+    #footer-logo{
+    margin-top: 240px;
+        }
+    #spoonvertical {
+    margin-top: 310px;
+    }
+    #footertext {
+    margin-top: 330px;
+    font-size: 30px;
+    } 
+    }
