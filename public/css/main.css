@@ -19,7 +19,7 @@ body {
 
 #logo { 
     margin: 100px auto 0;
-  width: 350px;
+  width: 300px;
     height: 300px;
     -webkit-transform-origin: 50% 0;
     transform-origin: 50% 0;
@@ -30,7 +30,7 @@ body {
 
 #footer-logo{
     margin: 60px auto 0;
-    width: 350px;
+    width: 300px;
     height: 300px;
 }
 @-webkit-keyframes swinging{
